@@ -4,51 +4,8 @@ import { GameState, Pet, Customer } from './types';
 import PetList from './PetList';
 import CustomerView from './CustomerView';
 import { Typography } from '@mui/material';
-import { mainPoints } from './constants';
-// Sample initial data
-const initialPets: Pet[] = [
-  {
-    id: '1',
-    name: 'Max',
-    type: 'dog',
-    gender: 'male',
-    age: 2,
-    isAdopted: false
-  },
-  {
-    id: '2',
-    name: 'Luna',
-    type: 'cat',
-    gender: 'female',
-    age: 1,
-    isAdopted: false
-  },
-  {
-    id: '3',
-    name: 'Charlie',
-    type: 'bird',
-    gender: 'male',
-    age: 0,
-    isAdopted: false
-  }
-];
+import { initialPets, mainPoints, initialCustomers } from './constants';
 
-const initialCustomers: Customer[] = [
-  {
-    id: '1',
-    name: 'John Smith',
-    gender: 'male',
-    preferredPets: ['dog', 'cat'],
-    adoptedPets: []
-  },
-  {
-    id: '2',
-    name: 'Sarah Johnson',
-    gender: 'female',
-    preferredPets: ['cat', 'bird'],
-    adoptedPets: []
-  }
-];
 
 const PetShop: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -63,7 +20,7 @@ const PetShop: React.FC = () => {
   }
   const [gameState, setGameState] = useState<GameState>({
     pets: initialPets,
-    customers: initialCustomers,
+    customers: initialCustomers as Customer[],
     money: 1000,
     day: 1,
     currentDate: new Date()

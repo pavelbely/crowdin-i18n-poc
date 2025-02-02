@@ -3,6 +3,7 @@ import ICU from 'i18next-icu';
 import { initReactI18next } from 'react-i18next';
 import enTranslation from './locales/en/translation.json';
 import esTranslation from './locales/es/translation.json';
+import deTranslation from './locales/de/translation.json';
 
 // Async function to load polyfills
 const loadPolyfills = async () => {
@@ -18,6 +19,9 @@ const resources = {
   },
   es: {
     translation: esTranslation
+  },
+  de: {
+    translation: deTranslation
   }
 };
 
