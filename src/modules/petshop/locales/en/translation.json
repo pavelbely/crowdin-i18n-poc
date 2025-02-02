@@ -58,6 +58,10 @@
         "title": "30-day health guarantee",
         "description": "30-day health guarantee for all pets"
       }
+    },
+    "controls": {
+      "addPet": "Add New Pet",
+      "nextDay": "Next Day"
     }
   }
 } 

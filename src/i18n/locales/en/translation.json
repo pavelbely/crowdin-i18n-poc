@@ -20,5 +20,9 @@
   },
   "common": {
     "close": "Close"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About"
   }
 } 

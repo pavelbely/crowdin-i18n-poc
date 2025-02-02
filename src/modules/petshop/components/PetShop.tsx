@@ -82,10 +82,10 @@ const PetShop: React.FC = () => {
 
       <div className="shop-controls">
         <button onClick={addNewPet} className="control-button">
-          Add New Pet
+          {mt('shop.controls.addPet')}
         </button>
         <button onClick={advanceDay} className="control-button">
-          Next Day
+          {mt('shop.controls.nextDay')}
         </button>
       </div>
 

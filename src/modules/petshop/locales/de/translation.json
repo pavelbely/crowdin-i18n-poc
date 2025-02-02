@@ -58,6 +58,10 @@
           "title": "30-Tage Gesundheitsgarantie",
           "description": "30-Tage Gesundheitsgarantie für alle Haustiere"
         }
+      },
+      "controls": {
+        "addPet": "Neues Haustier hinzufügen",
+        "nextDay": "Nächster Tag"
       }
     }
   } 

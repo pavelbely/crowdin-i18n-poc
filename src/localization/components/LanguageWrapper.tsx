@@ -7,7 +7,7 @@ import { LanguageSwitcher } from './LanguageSwitcher';
 import { DefaultBrowserLanguage } from './DefaultBrowserLanguage';
 
 export const LanguageWrapper: React.FC = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const { lang } = useParams<{ lang: string }>();
 
@@ -34,8 +34,8 @@ export const LanguageWrapper: React.FC = () => {
   return (
     <>
       <div className="menu">
-        <Link to={`/${lang}`}>Home</Link>
-        <Link to={`/${lang}/about`}>About</Link>
+        <Link to={`/${lang}`}>{t('navigation.home')}</Link>
+        <Link to={`/${lang}/about`}>{t('navigation.about')}</Link>
         <LanguageSwitcher />
         <DefaultBrowserLanguage />
       </div>

@@ -20,5 +20,9 @@
   },
   "common": {
     "close": "Cerrar"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca de"
   }
 } 
