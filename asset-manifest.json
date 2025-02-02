@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.791c1b19.css",
-    "main.js": "/static/js/main.769661d2.js",
-    "static/js/167.78f0593a.chunk.js": "/static/js/167.78f0593a.chunk.js",
-    "static/js/305.a66c7afa.chunk.js": "/static/js/305.a66c7afa.chunk.js",
-    "index.html": "/index.html",
-    "main.791c1b19.css.map": "/static/css/main.791c1b19.css.map",
-    "main.769661d2.js.map": "/static/js/main.769661d2.js.map",
-    "167.78f0593a.chunk.js.map": "/static/js/167.78f0593a.chunk.js.map",
-    "305.a66c7afa.chunk.js.map": "/static/js/305.a66c7afa.chunk.js.map"
+    "main.css": "/crowdin-i18n-poc/static/css/main.791c1b19.css",
+    "main.js": "/crowdin-i18n-poc/static/js/main.0d715274.js",
+    "static/js/167.78f0593a.chunk.js": "/crowdin-i18n-poc/static/js/167.78f0593a.chunk.js",
+    "static/js/305.a66c7afa.chunk.js": "/crowdin-i18n-poc/static/js/305.a66c7afa.chunk.js",
+    "index.html": "/crowdin-i18n-poc/index.html",
+    "main.791c1b19.css.map": "/crowdin-i18n-poc/static/css/main.791c1b19.css.map",
+    "main.0d715274.js.map": "/crowdin-i18n-poc/static/js/main.0d715274.js.map",
+    "167.78f0593a.chunk.js.map": "/crowdin-i18n-poc/static/js/167.78f0593a.chunk.js.map",
+    "305.a66c7afa.chunk.js.map": "/crowdin-i18n-poc/static/js/305.a66c7afa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.791c1b19.css",
-    "static/js/main.769661d2.js"
+    "static/js/main.0d715274.js"
   ]
 }
