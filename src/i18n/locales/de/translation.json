@@ -44,8 +44,30 @@
     "formatting": {
       "important": "<highlight>Important Notice:</highlight> All pets must be vaccinated",
       "emphasis": "We <highlight>strongly recommend</highlight> regular vet checkups",
-      "mixed": "Your pet's health is our <highlight>number <emphasis>one</emphasis> priority</highlight>",
-      "list": "<list><item>{points}</item></list>"
+      "mixed": "Your pet's health is our <highlight>number <emphasis>one</emphasis> priority</highlight>"
+    },
+    "names": {
+      "customers": {
+        "1": "John Smith",
+        "2": "Sarah Johnson"
+      },
+      "pets": {
+        "1": "Max",
+        "2": "Luna",
+        "3": "Charlie"
+      }
     }
+  },
+  "404": {
+    "title": "404 - Page Not Found",
+    "description": "The page you are looking for does not exist.",
+    "backHome": "Back to Home"
+  },
+  "browserLanguage": {
+    "full": "Your browser language is: ",
+    "primary": "Primary language code: ",
+    "country": "Your country: ",
+    "loading": "Detecting location...",
+    "error": "Could not detect location"
   }
 }
