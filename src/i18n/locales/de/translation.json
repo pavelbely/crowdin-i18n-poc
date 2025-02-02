@@ -1,14 +1,14 @@
 {
   "browserLanguage": {
     "showInfo": "Sprachinfo anzeigen",
-    "dialogTitle": "Sprachinformation",
+    "dialogTitle": "Sprachinformationen",
     "full": "Ihre Browsersprache ist: ",
     "primary": "Primärer Sprachcode: ",
     "country": "Ihr Land: ",
-    "countryLanguage": "Allgemeine Sprache in Ihrem Land: ",
+    "countryLanguage": "Übliche Sprache in Ihrem Land: ",
     "unknownLanguage": "Unbekannt",
-    "loading": "Standort wird erkannt...",
-    "error": "Standort konnte nicht erkannt werden",
+    "loading": "Standort wird ermittelt...",
+    "error": "Standort konnte nicht ermittelt werden",
     "supported": "Unterstützt",
     "notSupported": "Nicht unterstützt"
   },
