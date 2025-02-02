@@ -1,11 +1,11 @@
 {
   "browserLanguage": {
-    "showInfo": "Mostrar información de idioma",
+    "showInfo": "Mostrar información del idioma",
     "dialogTitle": "Información del idioma",
-    "full": "El idioma del navegador es: ",
+    "full": "El idioma de tu navegador es: ",
     "primary": "Código de idioma principal: ",
     "country": "Tu país: ",
-    "countryLanguage": "Lenguaje común en tu país: ",
+    "countryLanguage": "Idioma común en tu país: ",
     "unknownLanguage": "Desconocido",
     "loading": "Detectando ubicación...",
     "error": "No se pudo detectar la ubicación",
