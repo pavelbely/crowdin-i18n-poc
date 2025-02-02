@@ -20,5 +20,9 @@
   },
   "common": {
     "close": "Schließen"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über uns"
   }
 }
