@@ -1,0 +1,31 @@
+{
+  "shop": {
+    "title": "Happy Paws Pet Shop",
+    "stats": {
+      "money": "Shop Balance: {{amount, currency(USD)}}",
+      "day": "Day {{day, number}}",
+      "date": "Today is {{date, datetime}}",
+      "pets": "{count, plural, =0 {No pets available} one {# pet available} other {# pets available ({{dogs}} dogs, {{cats}} cats)}}",
+      "averageAge": "Average pet age: {{age, number(maximumFractionDigits: 1)}} years"
+    },
+    "pet": {
+      "status": "{gender, select, male {He is} female {She is}} {age, plural, =0 {newborn} one {# year old} other {# years old}}",
+      "adoption": "{gender, select, male {He was} female {She was}} adopted by {customerGender, select, male {Mr.} female {Ms.} other {Mx.}} {{customerName}}",
+      "price": "Adoption fee: {{price, currency(USD)}}",
+      "nextCheckup": "Next checkup: {{date, datetime(year: numeric; month: long; day: numeric)}}"
+    },
+    "customer": {
+      "greeting": "{gender, select, male {He is} female {She is} other {They are}} looking for {count, plural, =0 {any pet} one {# pet} other {# pets}}",
+      "preference": "{gender, select, male {He prefers} female {She prefers} other {They prefer}} {petType, select, dog {dogs} cat {cats} bird {birds} other {any pets}}",
+      "history": "{gender, select, male {He has} female {She has} other {They have}} adopted {count, plural, =0 {no pets yet} one {# pet} other {# pets}}",
+      "lastVisit": "Last visit: {{date, datetime(weekday: long; month: short; day: numeric)}}",
+      "memberSince": "Member since: {{date, datetime(month: long; year: numeric)}}"
+    },
+    "formatting": {
+      "important": "<b>Important Notice:</b> All pets must be vaccinated",
+      "emphasis": "We <i>strongly recommend</i> regular vet checkups",
+      "mixed": "Your pet's health is our <b>number <i>one</i> priority</b>",
+      "list": "<ul><li>Free initial checkup</li><li>Vaccination included</li><li>30-day health guarantee</li></ul>"
+    }
+  }
+}
