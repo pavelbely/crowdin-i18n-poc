@@ -28,10 +28,10 @@ const App: React.FC = () => {
           <Route path="about" element={<About />} />
         </Route>
         
-        {/* Catch all other routes and redirect to 404 */}
+        {/* Prevent always redirecting to 404 when deployed to Github pages */}
         <Route 
           path="*" 
-          element={<Navigate to="/404" replace />} 
+          element={<Navigate to="/en" replace />} 
         />
       </Routes>
     </BrowserRouter>
