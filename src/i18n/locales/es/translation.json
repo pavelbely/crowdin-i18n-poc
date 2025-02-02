@@ -1,24 +1,24 @@
 {
   "browserLanguage": {
-    "showInfo": "Show Language Info",
-    "dialogTitle": "Language Information",
-    "full": "Your browser language is: ",
-    "primary": "Primary language code: ",
-    "country": "Your country: ",
-    "countryLanguage": "Common language in your country: ",
-    "unknownLanguage": "Unknown",
-    "loading": "Detecting location...",
-    "error": "Could not detect location",
-    "supported": "Supported",
-    "notSupported": "Not supported"
+    "showInfo": "Mostrar información de idioma",
+    "dialogTitle": "Información del idioma",
+    "full": "El idioma del navegador es: ",
+    "primary": "Código de idioma principal: ",
+    "country": "Tu país: ",
+    "countryLanguage": "Lenguaje común en tu país: ",
+    "unknownLanguage": "Desconocido",
+    "loading": "Detectando ubicación...",
+    "error": "No se pudo detectar la ubicación",
+    "supported": "Soportado",
+    "notSupported": "No soportado"
   },
   "languages": {
-    "en": "English",
-    "es": "Spanish",
-    "de": "German",
-    "he": "Hebrew"
+    "en": "Inglés",
+    "es": "Español",
+    "de": "Alemán",
+    "he": "Hebreo"
   },
   "common": {
-    "close": "Close"
+    "close": "Cerrar"
   }
 }
