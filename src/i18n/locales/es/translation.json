@@ -1,36 +1,24 @@
 {
-  "shop": {
-    "title": "Tienda de Mascotas Happy Paws",
-    "stats": {
-      "money": "Saldo: {amount, number, ::currency/EUR}",
-      "day": "Día {day}",
-      "date": "Hoy es {date, date, full}",
-      "pets": "{count, plural, =0 {No hay mascotas disponibles} one {# mascota disponible} other {# mascotas disponibles ({{dogs}} perros, {{cats}} gatos)}}",
-      "averageAge": "Edad promedio: {age, number, ::maximumFractionDigits=1} años"
-    },
-    "pet": {
-      "type": {
-        "dog": "Perro",
-        "cat": "Gato",
-        "bird": "Pájaro",
-        "fish": "Pez"
-      },
-      "status": "{gender, select, male {Él tiene} female {Ella tiene} other {Tienen}} {age, plural, =0 {recién nacido} one {# año} other {# años}}",
-      "adoption": "{gender, select, male {Fue adoptado} female {Fue adoptada}} por {customerGender, select, male {Sr.} female {Sra.} other {Sx.}} {{customerName}}",
-      "price": "Tarifa de adopción: {price, number, ::currency/EUR}",
-      "nextCheckup": "Próxima revisión: {date, date, long}"
-    },
-    "customer": {
-      "greeting": "{gender, select, male {Él busca} female {Ella busca} other {Buscan}} {count, plural, =0 {cualquier mascota} one {# mascota} other {# mascotas}}",
-      "preference": "{gender, select, male {Él prefiere} female {Ella prefiere} other {Prefieren}} {petType, select, dog {perros} cat {gatos} bird {pájaros} other {cualquier mascota}}",
-      "history": "{gender, select, male {Él ha} female {Ella ha} other {Han}} adoptado {count, plural, =0 {ninguna mascota} one {# mascota} other {# mascotas}}",
-      "lastVisit": "Última visita: {date, date, long}",
-      "memberSince": "Miembro desde: {date, date, long}"
-    },
-    "formatting": {
-      "important": "<highlight>Aviso Importante:</highlight> Todas las mascotas deben estar vacunadas",
-      "emphasis": "Nosotros <highlight>recomendamos encarecidamente</highlight> chequeos veterinarios regulares",
-      "mixed": "La salud de tu mascota es nuestra <highlight>prioridad <emphasis>número uno</emphasis></highlight>"
-    }
+  "browserLanguage": {
+    "showInfo": "Mostrar información del idioma",
+    "dialogTitle": "Información del idioma",
+    "full": "El idioma de tu navegador es: ",
+    "primary": "Código de idioma principal: ",
+    "country": "Tu país: ",
+    "countryLanguage": "Idioma común en tu país: ",
+    "unknownLanguage": "Desconocido",
+    "loading": "Detectando ubicación...",
+    "error": "No se pudo detectar la ubicación",
+    "supported": "Soportado",
+    "notSupported": "No soportado"
+  },
+  "languages": {
+    "en": "Inglés",
+    "es": "Español",
+    "de": "Alemán",
+    "he": "Hebreo"
+  },
+  "common": {
+    "close": "Cerrar"
   }
 } 

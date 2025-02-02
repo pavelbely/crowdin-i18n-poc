@@ -1,13 +1,13 @@
 import React from 'react';
 import { Pet } from './types';
-import { useTranslation } from 'react-i18next';
+import { useModuleTranslation } from '../../../localization/useModuleTranslation';
 
 interface PetListProps {
   pets: Pet[];
 }
 
 const PetList: React.FC<PetListProps> = ({ pets }) => {
-  const { t } = useTranslation();
+  const { mt, t } = useModuleTranslation();
 
   if (pets.length === 0) {
     return <p className="no-pets">{t('shop.pet.noPets')}</p>;
@@ -23,13 +23,13 @@ const PetList: React.FC<PetListProps> = ({ pets }) => {
               {t(`shop.pet.type.${pet.type}`)}
             </p>
             <p className="pet-status">
-              {t('shop.pet.status', {
+              {mt('shop.pet.status', {
                 gender: pet.gender,
                 age: pet.age
               })}
             </p>
             <p className="pet-price">
-              {t('shop.pet.price', {
+              {mt('shop.pet.price', {
                 price: 100,
                 formatParams: {
                   price: { minimumFractionDigits: 2 }
@@ -37,7 +37,7 @@ const PetList: React.FC<PetListProps> = ({ pets }) => {
               })}
             </p>
             <p className="pet-next-checkup">
-              {t('shop.pet.nextCheckup', {
+              {mt('shop.pet.nextCheckup', {
                 date: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
                 formatParams: {
                   date: {

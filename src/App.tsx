@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageWrapper } from './localization/components/LanguageWrapper';
-import PetShop from './components/PetShop';
+import PetShop from './modules/petshop/components/PetShop';
 import './styles/PetShop.css';
-import { NotFound } from './pages/NotFound';
+import { NotFound } from './modules/account/components/NotFound';
 
 const App: React.FC = () => {
   return (

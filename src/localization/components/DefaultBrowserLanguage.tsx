@@ -1,32 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { supportedLanguages } from '../../i18n/config';
+import { countryToLanguage } from '../constants';
+
 import { 
   Dialog, 
   DialogTitle, 
   DialogContent, 
   DialogActions,
-  Button,
-  IconButton
+  Button
 } from '@mui/material';
 
 interface LocationData {
   country_name: string;
   country_code: string;
 }
-
-// Common country code to language mappings
-// This is a simplified list - you might want to expand it
-const countryToLanguage: { [key: string]: string } = {
-  // English-speaking countries
-  US: 'en', UK: 'en', AU: 'en', CA: 'en', NZ: 'en',
-  // Spanish-speaking countries
-  ES: 'es', MX: 'es', AR: 'es', CO: 'es', CL: 'es',
-  // German-speaking countries
-  DE: 'de', AT: 'de', CH: 'de',
-  // Add more as needed
-  IL: 'he',
-};
 
 export const DefaultBrowserLanguage: React.FC = () => {
   const { t } = useTranslation();
@@ -62,25 +50,25 @@ export const DefaultBrowserLanguage: React.FC = () => {
   const Content = () => (
     <>
       <p className="mb-3">
-        {t('browserLanguage.full', 'Your browser language is: ')}
+        {t('browserLanguage.full')}
         <span className="font-bold">{browserLanguage}</span>
       </p>
       <p className="mb-3">
-        {t('browserLanguage.primary', 'Primary language code: ')}
+        {t('browserLanguage.primary')}
         <span className="font-bold">{primaryLanguage}</span>
       </p>
       {isLoading ? (
-        <p>{t('browserLanguage.loading', 'Detecting location...')}</p>
+        <p>{t('browserLanguage.loading')}</p>
       ) : location ? (
         <>
           <p className="mb-3">
-            {t('browserLanguage.country', 'Your country: ')}
+            {t('browserLanguage.country')}
             <span className="font-bold">
               {location.country_name} ({location.country_code})
             </span>
           </p>
           <p className="mb-3">
-            {t('browserLanguage.countryLanguage', 'Common language in your country: ')}
+            {t('browserLanguage.countryLanguage')}
             <span className="font-bold">
               {countryLanguage 
                 ? `${t(`languages.${countryLanguage}`, countryLanguage)} (${
@@ -88,12 +76,12 @@ export const DefaultBrowserLanguage: React.FC = () => {
                       ? t('browserLanguage.supported') 
                       : t('browserLanguage.notSupported')
                   })`
-                : t('browserLanguage.unknownLanguage', 'Unknown')}
+                : t('browserLanguage.unknownLanguage')}
             </span>
           </p>
         </>
       ) : (
-        <p>{t('browserLanguage.error', 'Could not detect location')}</p>
+        <p>{t('browserLanguage.error')}</p>
       )}
     </>
   );
@@ -118,13 +106,6 @@ export const DefaultBrowserLanguage: React.FC = () => {
         <DialogTitle>
           <div className="flex justify-between items-center">
             {t('browserLanguage.dialogTitle', 'Language Information')}
-            <IconButton
-              onClick={() => setIsOpen(false)}
-              size="small"
-              aria-label="close"
-            >
-              ✕
-            </IconButton>
           </div>
         </DialogTitle>
         <DialogContent>

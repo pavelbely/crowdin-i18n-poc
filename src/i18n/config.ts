@@ -1,6 +1,10 @@
 import i18n from 'i18next';
 import ICU from 'i18next-icu';
 import { initReactI18next } from 'react-i18next';
+import { loadModuleTranslations as loadAccountTranslations } from '../modules/account/i18n';
+import { loadModuleTranslations as loadPetshopTranslations } from '../modules/petshop/i18n';
+
+// Common translations
 import enTranslation from './locales/en/translation.json';
 import esTranslation from './locales/es/translation.json';
 import deTranslation from './locales/de/translation.json';
@@ -37,6 +41,8 @@ loadPolyfills().then(() => {
       resources,
       lng: 'en',
       fallbackLng: 'en',
+      ns: ['account', 'petshop'],
+      defaultNS: 'translation',
       interpolation: {
         escapeValue: false
       },
@@ -51,6 +57,10 @@ loadPolyfills().then(() => {
       returnObjects: true,
       saveMissing: true,
     });
+
+  // Load module translations
+  loadAccountTranslations(i18n);
+  loadPetshopTranslations(i18n);
 });
 
 export default i18n;
