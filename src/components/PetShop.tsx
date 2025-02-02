@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { GameState, Pet, Customer } from '../types/PetShop';
+import { useTranslation, Trans } from 'react-i18next';
+import { GameState, Pet, Customer } from './types';
 import PetList from './PetList';
 import CustomerView from './CustomerView';
-import parse from 'html-react-parser';
-
+import { Typography } from '@mui/material';
+import { mainPoints } from './constants';
 // Sample initial data
 const initialPets: Pet[] = [
   {
@@ -145,16 +145,43 @@ const PetShop: React.FC = () => {
 
       <div className="shop-notices">
         <div className="important-notice">
-          {parse(t('shop.formatting.important'))}
+          <Trans
+            i18nKey="shop.formatting.important"
+            components={{
+              highlight: <Typography component="span" fontWeight="bold" />
+            }}
+          />
         </div>
         <div className="recommendations">
-          {parse(t('shop.formatting.emphasis'))}
+          <Trans
+            i18nKey="shop.formatting.emphasis"
+            components={{
+              highlight: <Typography component="span" fontStyle="italic" />
+            }}
+          />
         </div>
         <div className="mission">
-          {parse(t('shop.formatting.mixed'))}
+          <Trans
+            i18nKey="shop.formatting.mixed"
+            components={{
+              highlight: <Typography component="span" fontWeight="bold" />,
+              emphasis: <Typography component="span" fontStyle="italic" />
+            }}
+          />
         </div>
         <div className="benefits">
-          {parse(t('shop.formatting.list'))}
+          <ul>
+            {mainPoints.map(point => (
+              <li key={point.id}>
+                <Typography>
+                  {t(`shop.mainPoints.${point.id}.title`)}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {t(`shop.mainPoints.${point.id}.description`)}
+                </Typography>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
