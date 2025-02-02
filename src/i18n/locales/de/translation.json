@@ -1,31 +1,58 @@
-{
-  "shop": {
-    "title": "Glückliche Pfoten Tierladen",
-    "stats": {
-      "money": "Shop-Balance: {{amount, currency(USD)}}",
-      "day": "Test3: {{day, number}}",
-      "date": "Heute ist {{date, datetime}}",
-      "pets": "{count, plural, =0 {Keine Haustiere verfügbar} one {# Haustier verfügbar} other {# Haustiere verfügbar ({{dogs}} Hunde, {{cats}} Katzen)}}",
-      "averageAge": "Durchschnittliches Alter der Tiere: {{age, number(maximumFractionDigits: 1)}} Jahre"
-    },
-    "pet": {
-      "status": "{gender, select, male {Er ist} female {Sie ist}} {age, plural, =0 {neugeboren} one {# Jahr alt} other {# Jahre alt}}",
-      "adoption": "{gender, select, male {Er wurde} female {Sie wurde}} adoptiert von {customerGender, select, male {Herrn} female {Frau} other {Mx.}} {{customerName}}.",
-      "price": "Test2: {{price, currency(USD)}}",
-      "nextCheckup": "Nächster Check-up: {{date, datetime(year: numeric; month: long; day: numeric)}}"
-    },
-    "customer": {
-      "greeting": "{gender, select, male {Er ist} female {Sie ist} other {Sie sind}} auf der Suche nach {count, plural, =0 {irgendeinem Tier} one {# Tier} other {# Tieren}}",
-      "preference": "{gender, select, male {Er bevorzugt} female {Sie bevorzugt} other {Sie bevorzugen}} {petType, select, dog {Hunde} cat {Katzen} bird {Vögel} other {irgendeinen Tier}}",
-      "history": "{gender, select, male {Er hat} female {Sie hat} other {Sie haben}} adoptiert {count, plural, =0 {noch keine Tiere} one {# Tier} other {# Tiere}}",
-      "lastVisit": "Letzter Besuch: {{date, datetime(weekday: long; month: short; day: numeric)}}",
-      "memberSince": "Mitglied seit: {{date, datetime(month: long; year: numeric)}}"
-    },
-    "formatting": {
-      "important": "<b>Wichtige Mitteilung:</b> Alle Tiere müssen geimpft sein",
-      "emphasis": "Wir <i>empfehlen dringend</i> regelmäßige Tierarztbesuche",
-      "mixed": "Die Gesundheit Ihres Tieres hat für uns <b>oberste <i>Priorität</i></b>",
-      "list": "<ul><li>Kostenloser Erstcheck-up</li><li>Impfung inklusive</li><li>30-tägige Gesundheitsgarantie</li></ul>"
-    }
-  }
-}
+    {
+      "shop": {
+        "title": "Tierhandlung Happy Paws",
+        "stats": {
+          "money": "Kassenstand: {amount, number, ::currency/EUR}",
+          "day": "Tag {day}",
+          "date": "Heute ist {date, date, full}",
+          "pets": "{count, plural, =0 {Keine Haustiere verfügbar} one {# Haustier verfügbar} other {# Haustiere verfügbar ({{dogs}} Hunde, {{cats}} Katzen)}}",
+          "averageAge": "Durchschnittsalter: {age, number, ::maximumFractionDigits=1} Jahre"
+        },
+        "pet": {
+          "type": {
+            "dog": "Hund",
+            "cat": "Katze",
+            "bird": "Vogel",
+            "fish": "Fisch"
+          },
+          "status": "{gender, select, male {Er ist} female {Sie ist} other {Sie sind}} {age, plural, =0 {neugeboren} one {# Jahr alt} other {# Jahre alt}}",
+          "adoption": "{gender, select, male {Er wurde} female {Sie wurde}} von {customerGender, select, male {Herr} female {Frau} other {Mx.}} {{customerName}} adoptiert",
+          "price": "Adoptionsgebühr: {price, number, ::currency/EUR}",
+          "nextCheckup": "Nächste Untersuchung: {date, date, long}"
+        },
+        "customer": {
+          "greeting": "{gender, select, male {Er sucht} female {Sie sucht} other {Sie suchen}} {count, plural, =0 {irgendein Haustier} one {# Haustier} other {# Haustiere}}",
+          "preference": "{gender, select, male {Er bevorzugt} female {Sie bevorzugt} other {Sie bevorzugen}} {petType, select, dog {Hunde} cat {Katzen} bird {Vögel} other {alle Haustiere}}",
+          "history": "{gender, select, male {Er hat} female {Sie hat} other {Sie haben}} {count, plural, =0 {noch keine Haustiere} one {# Haustier} other {# Haustiere}} adoptiert",
+          "lastVisit": "Letzter Besuch: {date, date, long}",
+          "memberSince": "Mitglied seit: {date, date, long}"
+        },
+        "pets": {
+          "names": {
+            "1": "Max",
+            "2": "Luna",
+            "3": "Charlie"
+          }
+        },
+        "mainPoints": {
+          "1": {
+            "title": "Kostenlose Erstuntersuchung",
+            "description": "Kostenlose Erstuntersuchung für alle Haustiere"
+          },
+          "2": {
+            "title": "Impfung inklusive",
+            "description": "Impfung für alle Haustiere inklusive"
+          },
+          "3": {
+            "title": "30-Tage Gesundheitsgarantie",
+            "description": "30-Tage Gesundheitsgarantie für alle Haustiere"
+          }
+        },
+        "formatting": {
+          "important": "<highlight>Wichtiger Hinweis:</highlight> Alle Haustiere müssen geimpft sein",
+          "emphasis": "Wir <highlight>empfehlen dringend</highlight> regelmäßige Tierarztbesuche",
+          "mixed": "Die Gesundheit Ihres Haustiers ist unsere <highlight>Priorität <emphasis>Nummer eins</emphasis></highlight>",
+          "list": "<list><item>{points}</item></list>"
+        }
+      }
+    } 

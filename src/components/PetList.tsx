@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pet } from '../types/PetShop';
+import { Pet } from './types';
 import { useTranslation } from 'react-i18next';
 
 interface PetListProps {

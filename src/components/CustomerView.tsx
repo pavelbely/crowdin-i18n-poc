@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Customer, Pet } from '../types/PetShop';
+import { Customer, Pet } from './types';
 
 interface CustomerViewProps {
   customers: Customer[];

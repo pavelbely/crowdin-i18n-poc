@@ -22,3 +22,9 @@ export interface GameState {
   day: number;
   currentDate: Date;
 } 
+
+export interface MainPoint {
+  id: number;
+  title: string;
+  description: string;
+}
