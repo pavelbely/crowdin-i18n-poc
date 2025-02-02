@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useParams } from 'react-router-dom';
 import React from 'react';
-import { supportedLanguages, defaultLanguage } from '../i18n/config';
+import { supportedLanguages, defaultLanguage } from '../../i18n/config';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { DefaultBrowserLanguage } from './DefaultBrowserLanguage';
 

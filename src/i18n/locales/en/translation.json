@@ -64,10 +64,25 @@
     "backHome": "Back to Home"
   },
   "browserLanguage": {
+    "showInfo": "Show Language Info",
+    "dialogTitle": "Language Information",
     "full": "Your browser language is: ",
     "primary": "Primary language code: ",
     "country": "Your country: ",
+    "countryLanguage": "Common language in your country: ",
+    "unknownLanguage": "Unknown",
     "loading": "Detecting location...",
-    "error": "Could not detect location"
+    "error": "Could not detect location",
+    "supported": "Supported",
+    "notSupported": "Not supported"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Spanish",
+    "de": "German",
+    "he": "Hebrew"
+  },
+  "common": {
+    "close": "Close"
   }
 } 

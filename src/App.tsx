@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { LanguageWrapper } from './components/LanguageWrapper';
+import { LanguageWrapper } from './localization/components/LanguageWrapper';
 import PetShop from './components/PetShop';
 import './styles/PetShop.css';
 import { NotFound } from './pages/NotFound';

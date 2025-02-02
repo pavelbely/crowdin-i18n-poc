@@ -1,6 +1,6 @@
-import { useLanguage } from '../hooks/useLanguage';
+import { useLanguage } from '../useLanguage';
 import React from 'react';
-import { supportedLanguages } from '../i18n/config';
+import { supportedLanguages } from '../../i18n/config';
 
 export const LanguageSwitcher: React.FC = () => {
   const { currentLanguage, changeLanguage } = useLanguage();

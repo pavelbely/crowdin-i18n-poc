@@ -1,5 +1,5 @@
 body {
-  padding: 0 24px;
+  padding: 0 24px 24px;
 }
 
 .pet-shop {
@@ -204,11 +204,17 @@ h2 {
 
 .language-switcher {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 14px;
+  right: 24px;
 }
 
 .not-found {
   text-align: center;
   padding: 20px;
+}
+
+.info-button {
+  position: absolute!important;
+  top: 10px;
+  right: 60px;
 }
