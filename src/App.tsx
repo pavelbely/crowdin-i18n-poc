@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageWrapper } from './components/LanguageWrapper';
 import PetShop from './components/PetShop';
 import './styles/PetShop.css';
+import { NotFound } from './pages/NotFound';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,12 @@ const App: React.FC = () => {
         <Route 
           path="/" 
           element={<Navigate to="/en" replace />} 
+        />
+        
+        {/* 404 route - outside of LanguageWrapper */}
+        <Route 
+          path="/404" 
+          element={<NotFound />} 
         />
         
         {/* Language-specific routes */}
@@ -24,10 +31,10 @@ const App: React.FC = () => {
           } 
         />
         
-        {/* Catch all other routes and redirect to default language */}
+        {/* Catch all other routes and redirect to 404 */}
         <Route 
           path="*" 
-          element={<Navigate to="/en" replace />} 
+          element={<Navigate to="/404" replace />} 
         />
       </Routes>
     </BrowserRouter>

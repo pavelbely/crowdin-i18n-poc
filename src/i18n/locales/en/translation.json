@@ -57,5 +57,14 @@
         "3": "Charlie"
       }
     }
+  },
+  "404": {
+    "title": "404 - Page Not Found",
+    "description": "The page you are looking for does not exist.",
+    "backHome": "Back to Home"
+  },
+  "browserLanguage": {
+    "full": "Your browser language is: ",
+    "primary": "Primary language code: "
   }
 } 

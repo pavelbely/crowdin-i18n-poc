@@ -1,5 +1,6 @@
 import { useLanguage } from '../hooks/useLanguage';
 import React from 'react';
+import { supportedLanguages } from '../i18n/config';
 
 export const LanguageSwitcher: React.FC = () => {
   const { currentLanguage, changeLanguage } = useLanguage();
@@ -10,8 +11,11 @@ export const LanguageSwitcher: React.FC = () => {
         value={currentLanguage} 
         onChange={(e) => changeLanguage(e.target.value)}
       >
-        <option value="en">English</option>
-        <option value="de">Deutsch</option>
+        {supportedLanguages.map((lang) => (
+          <option key={lang} value={lang}>
+            {lang.toUpperCase()}
+          </option>
+        ))}
       </select>
     </div>
   );

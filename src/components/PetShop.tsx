@@ -8,16 +8,7 @@ import { initialPets, mainPoints, initialCustomers } from './constants';
 
 
 const PetShop: React.FC = () => {
-  const { t, i18n } = useTranslation();
-  const [isEnLanguageActive, setIsEnLanguageActive] = useState(true);
-  const toggleLanguage = () => {
-    if (isEnLanguageActive) {
-      i18n.changeLanguage('de');
-    } else {
-      i18n.changeLanguage('en');
-    }
-    setIsEnLanguageActive(!isEnLanguageActive);
-  }
+  const { t } = useTranslation();
   const [gameState, setGameState] = useState<GameState>({
     pets: initialPets as Pet[],
     customers: initialCustomers as Customer[],
@@ -89,9 +80,6 @@ const PetShop: React.FC = () => {
       </div>
 
       <div className="shop-controls">
-        <button onClick={toggleLanguage} className="primary-button">
-          Toogle language
-        </button>
         <button onClick={addNewPet} className="control-button">
           Add New Pet
         </button>
