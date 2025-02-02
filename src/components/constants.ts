@@ -12,10 +12,9 @@ export const mainPoints: Partial<MainPoint>[] = [
   }
 ];
 
-export const initialPets: Pet[] = [
+export const initialPets: Partial<Pet>[] = [
     {
       id: '1',
-      name: 'Max',
       type: 'dog',
       gender: 'male',
       age: 2,
@@ -23,7 +22,6 @@ export const initialPets: Pet[] = [
     },
     {
       id: '2',
-      name: 'Luna',
       type: 'cat',
       gender: 'female',
       age: 1,
@@ -31,7 +29,6 @@ export const initialPets: Pet[] = [
     },
     {
       id: '3',
-      name: 'Charlie',
       type: 'bird',
       gender: 'male',
       age: 0,
@@ -42,14 +39,12 @@ export const initialPets: Pet[] = [
   export const initialCustomers: Partial<Customer>[] = [
     {
       id: '1',
-      name: 'John Smith',
       gender: 'male',
       preferredPets: ['dog', 'cat'],
       adoptedPets: []
     },
     {
       id: '2',
-      name: 'Sarah Johnson',
       gender: 'female',
       preferredPets: ['cat', 'bird'],
       adoptedPets: []

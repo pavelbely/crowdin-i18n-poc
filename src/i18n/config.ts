@@ -25,6 +25,9 @@ const resources = {
   }
 };
 
+export const supportedLanguages = Object.keys(resources);
+export const defaultLanguage = 'en';
+
 // Initialize i18next after polyfills are loaded
 loadPolyfills().then(() => {
   i18n

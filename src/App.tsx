@@ -1,12 +1,37 @@
 import React from 'react';
-import './i18n/config';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { LanguageWrapper } from './components/LanguageWrapper';
 import PetShop from './components/PetShop';
 import './styles/PetShop.css';
 
-export const App: React.FC = () => {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <PetShop />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* Redirect root to default language */}
+        <Route 
+          path="/" 
+          element={<Navigate to="/en" replace />} 
+        />
+        
+        {/* Language-specific routes */}
+        <Route 
+          path="/:lang" 
+          element={
+            <LanguageWrapper>
+              <PetShop />
+            </LanguageWrapper>
+          } 
+        />
+        
+        {/* Catch all other routes and redirect to default language */}
+        <Route 
+          path="*" 
+          element={<Navigate to="/en" replace />} 
+        />
+      </Routes>
+    </BrowserRouter>
   );
-}; 
+};
+
+export default App; 

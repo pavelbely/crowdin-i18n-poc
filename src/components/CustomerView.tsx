@@ -18,7 +18,7 @@ const CustomerView: React.FC<CustomerViewProps> = ({ customers, onAdopt }) => {
     <div className="customers">
       {customers.map(customer => (
         <div key={customer.id} className="customer-card">
-          <h3 className="customer-name">{customer.name}</h3>
+          <h3 className="customer-name">{t(`shop.names.customers.${customer.id}`)}</h3>
           <div className="customer-details">
             <p className="customer-greeting">
               {t('shop.customer.greeting', {

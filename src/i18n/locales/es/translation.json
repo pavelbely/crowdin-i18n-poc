@@ -30,8 +30,7 @@
     "formatting": {
       "important": "<highlight>Aviso Importante:</highlight> Todas las mascotas deben estar vacunadas",
       "emphasis": "Nosotros <highlight>recomendamos encarecidamente</highlight> chequeos veterinarios regulares",
-      "mixed": "La salud de tu mascota es nuestra <highlight>prioridad <emphasis>número uno</emphasis></highlight>",
-      "list": "{list, select, true {{item, select, true {Chequeo inicial gratuito}}{item, select, true {Vacunación incluida}}{item, select, true {Garantía de salud de 30 días}}}}"
+      "mixed": "La salud de tu mascota es nuestra <highlight>prioridad <emphasis>número uno</emphasis></highlight>"
     }
   }
 } 

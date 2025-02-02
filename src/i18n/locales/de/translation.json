@@ -51,8 +51,18 @@
         "formatting": {
           "important": "<highlight>Wichtiger Hinweis:</highlight> Alle Haustiere müssen geimpft sein",
           "emphasis": "Wir <highlight>empfehlen dringend</highlight> regelmäßige Tierarztbesuche",
-          "mixed": "Die Gesundheit Ihres Haustiers ist unsere <highlight>Priorität <emphasis>Nummer eins</emphasis></highlight>",
-          "list": "<list><item>{points}</item></list>"
+          "mixed": "Die Gesundheit Ihres Haustiers ist unsere <highlight>Priorität <emphasis>Nummer eins</emphasis></highlight>"
+        },
+        "names": {
+          "customers": {
+            "1": "Johann Schmidt",
+            "2": "Sara Johnson"
+          },
+          "pets": {
+            "1": "Max",
+            "2": "Luna",
+            "3": "Charlie"
+          }
         }
       }
     } 

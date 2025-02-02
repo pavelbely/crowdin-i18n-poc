@@ -19,7 +19,7 @@ const PetShop: React.FC = () => {
     setIsEnLanguageActive(!isEnLanguageActive);
   }
   const [gameState, setGameState] = useState<GameState>({
-    pets: initialPets,
+    pets: initialPets as Pet[],
     customers: initialCustomers as Customer[],
     money: 1000,
     day: 1,

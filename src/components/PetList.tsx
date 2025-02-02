@@ -17,7 +17,7 @@ const PetList: React.FC<PetListProps> = ({ pets }) => {
     <div className="pet-list">
       {pets.map(pet => (
         <div key={pet.id} className="pet-card">
-          <h3>{pet.name}</h3>
+          <h3>{t(`shop.names.pets.${pet.id}`)}</h3>
           <div className="pet-details">
             <p className="pet-type">
               {t(`shop.pet.type.${pet.type}`)}
