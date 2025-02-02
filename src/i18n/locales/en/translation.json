@@ -65,6 +65,9 @@
   },
   "browserLanguage": {
     "full": "Your browser language is: ",
-    "primary": "Primary language code: "
+    "primary": "Primary language code: ",
+    "country": "Your country: ",
+    "loading": "Detecting location...",
+    "error": "Could not detect location"
   }
 } 
