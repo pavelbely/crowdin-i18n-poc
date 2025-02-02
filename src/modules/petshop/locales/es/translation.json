@@ -58,6 +58,10 @@
         "title": "Garantía de salud de 30 días",
         "description": "Garantía de salud de 30 días para todas las mascotas"
       }
+    },
+    "controls": {
+      "addPet": "Agregar Nueva Mascota",
+      "nextDay": "Siguiente Día"
     }
   }
 }
