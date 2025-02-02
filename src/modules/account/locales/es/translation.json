@@ -3,5 +3,22 @@
     "title": "404 - Página no encontrada",
     "description": "La página que estás buscando no existe.",
     "backHome": "Volver al inicio"
+  },
+  "about": {
+    "title": "Sobre Happy Paws",
+    "subtitle": "Creando Hogares Felices para Mascotas desde 2010",
+    "intro": "Bienvenidos a Happy Paws, donde cada mascota encuentra su hogar para siempre. Nuestro viaje comenzó con una misión simple: conectar familias amorosas con sus perfectos compañeros peludos.",
+    "mission": {
+      "title": "Nuestra Misión",
+      "content": "En Happy Paws, creemos que cada mascota merece un hogar amoroso. Trabajamos incansablemente para asegurar que cada adopción sea una combinación perfecta, creando vínculos duraderos entre las mascotas y sus nuevas familias. Nuestro proceso integral de adopción incluye controles de salud, evaluaciones de comportamiento y apoyo continuo para garantizar adopciones exitosas."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "content": "Priorizamos el bienestar animal por encima de todo. Cada mascota bajo nuestro cuidado recibe atención individual, atención médica adecuada y el amor que merece. Creemos en la transparencia, la educación y el apoyo a nuestra comunidad a través de prácticas responsables de adopción de mascotas."
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "content": "¿Tienes preguntas sobre la adopción? ¿Quieres saber más sobre nuestros servicios? Nuestro equipo está aquí para ayudar. Visítanos durante el horario comercial o contáctanos a través de nuestro sitio web. Siempre estamos felices de ayudar a los futuros padres de mascotas en su viaje para encontrar su compañero perfecto."
+    }
   }
 } 

@@ -3,5 +3,22 @@
     "title": "404 - Page Not Found",
     "description": "The page you are looking for does not exist.",
     "backHome": "Back to Home"
+  },
+  "about": {
+    "title": "About Happy Paws",
+    "subtitle": "Creating Happy Homes for Pets Since 2010",
+    "intro": "Welcome to Happy Paws, where every pet finds their forever home. Our journey began with a simple mission: to connect loving families with their perfect pet companions.",
+    "mission": {
+      "title": "Our Mission",
+      "content": "At Happy Paws, we believe that every pet deserves a loving home. We work tirelessly to ensure that each adoption is a perfect match, creating lasting bonds between pets and their new families. Our comprehensive adoption process includes health checks, behavioral assessments, and ongoing support to ensure successful adoptions."
+    },
+    "values": {
+      "title": "Our Values",
+      "content": "We prioritize animal welfare above all else. Each pet in our care receives individual attention, proper medical care, and the love they deserve. We believe in transparency, education, and supporting our community through responsible pet adoption practices."
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "content": "Have questions about adoption? Want to learn more about our services? Our team is here to help. Visit us during business hours or contact us through our website. We're always happy to assist future pet parents on their journey to finding their perfect companion."
+    }
   }
 } 
