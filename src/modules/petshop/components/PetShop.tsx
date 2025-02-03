@@ -1,25 +1,17 @@
 import React, { useState } from 'react';
-import { useTranslation, Trans } from 'react-i18next';
+import { Trans } from 'react-i18next';
 import { GameState, Pet, Customer } from './types';
 import PetList from './PetList';
 import CustomerView from './CustomerView';
 import { Typography } from '@mui/material';
 import { initialPets, mainPoints, initialCustomers } from './constants';
+import { useModuleTranslation } from '../../../localization/useModuleTranslation';
 
 
 const PetShop: React.FC = () => {
-  const { t, i18n } = useTranslation();
-  const [isEnLanguageActive, setIsEnLanguageActive] = useState(true);
-  const toggleLanguage = () => {
-    if (isEnLanguageActive) {
-      i18n.changeLanguage('de');
-    } else {
-      i18n.changeLanguage('en');
-    }
-    setIsEnLanguageActive(!isEnLanguageActive);
-  }
+  const { mt } = useModuleTranslation();
   const [gameState, setGameState] = useState<GameState>({
-    pets: initialPets,
+    pets: initialPets as Pet[],
     customers: initialCustomers as Customer[],
     money: 1000,
     day: 1,
@@ -65,17 +57,17 @@ const PetShop: React.FC = () => {
 
   return (
     <div className="pet-shop">
-      <h1>{t('shop.title')}</h1>
+      <h1>{mt('shop.title')}</h1>
       
       <div className="shop-stats">
-        <p>{t('shop.stats.money', { 
+        <p>{mt('shop.stats.money', { 
           amount: gameState.money,
           formatParams: {
             amount: { minimumFractionDigits: 2 }
           }
         })}</p>
-        <p>{t('shop.stats.day', { day: gameState.day })}</p>
-        <p>{t('shop.stats.date', { 
+        <p>{mt('shop.stats.day', { day: gameState.day })}</p>
+        <p>{mt('shop.stats.date', { 
           date: gameState.currentDate,
           formatParams: {
             date: { 
@@ -89,14 +81,11 @@ const PetShop: React.FC = () => {
       </div>
 
       <div className="shop-controls">
-        <button onClick={toggleLanguage} className="primary-button">
-          Toogle language
-        </button>
         <button onClick={addNewPet} className="control-button">
-          Add New Pet
+          {mt('shop.controls.addPet')}
         </button>
         <button onClick={advanceDay} className="control-button">
-          Next Day
+          {mt('shop.controls.nextDay')}
         </button>
       </div>
 
@@ -104,6 +93,7 @@ const PetShop: React.FC = () => {
         <div className="important-notice">
           <Trans
             i18nKey="shop.formatting.important"
+            ns="petshop"
             components={{
               highlight: <Typography component="span" fontWeight="bold" />
             }}
@@ -112,6 +102,7 @@ const PetShop: React.FC = () => {
         <div className="recommendations">
           <Trans
             i18nKey="shop.formatting.emphasis"
+            ns="petshop"
             components={{
               highlight: <Typography component="span" fontStyle="italic" />
             }}
@@ -124,6 +115,7 @@ const PetShop: React.FC = () => {
               highlight: <Typography component="span" fontWeight="bold" />,
               emphasis: <Typography component="span" fontStyle="italic" />
             }}
+            ns="petshop"
           />
         </div>
         <div className="benefits">
@@ -131,10 +123,10 @@ const PetShop: React.FC = () => {
             {mainPoints.map(point => (
               <li key={point.id}>
                 <Typography>
-                  {t(`shop.mainPoints.${point.id}.title`)}
+                  {mt(`shop.mainPoints.${point.id}.title`)}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  {t(`shop.mainPoints.${point.id}.description`)}
+                  {mt(`shop.mainPoints.${point.id}.description`)}
                 </Typography>
               </li>
             ))}

@@ -1,51 +1,28 @@
 {
-  "shop": {
-    "title": "Happy Paws Pet Shop",
-    "stats": {
-      "money": "Shop Balance: {amount, number, ::currency/USD}",
-      "day": "Day {day}",
-      "date": "Today is {date, date, full}",
-      "pets": "{count, plural, =0 {No pets available} one {# pet available} other {# pets available ({{dogs}} dogs, {{cats}} cats)}}",
-      "averageAge": "Average pet age: {age, number, ::maximumFractionDigits=1} years"
-    },
-    "pet": {
-      "type": {
-        "dog": "Dog",
-        "cat": "Cat",
-        "bird": "Bird",
-        "fish": "Fish"
-      },
-      "status": "{gender, select, male {He is} female {She is} other {They are}} {age, plural, =0 {newborn} one {# year old} other {# years old}}",
-      "adoption": "{gender, select, male {He was} female {She was}} adopted by {customerGender, select, male {Mr.} female {Ms.} other {Mx.}} {{customerName}}",
-      "price": "Adoption fee: {price, number, ::currency/USD}",
-      "nextCheckup": "Next checkup: {date, date, long}"
-    },
-    "customer": {
-      "greeting": "{gender, select, male {He is} female {She is} other {They are}} looking for {count, plural, =0 {any pet} one {# pet} other {# pets}}",
-      "preference": "{gender, select, male {He prefers} female {She prefers} other {They prefer}} {petType, select, dog {dogs} cat {cats} bird {birds} other {any pets}}",
-      "history": "{gender, select, male {He has} female {She has} other {They have}} adopted {count, plural, =0 {no pets yet} one {# pet} other {# pets}}",
-      "lastVisit": "Last visit: {date, date, long}",
-      "memberSince": "Member since: {date, date, long}"
-    },
-    "mainPoints": {
-      "1": {
-        "title": "Free initial checkup",
-        "description": "Free initial checkup for all pets"
-      },
-      "2": {
-        "title": "Vaccination included",
-        "description": "Vaccination included for all pets"
-      },
-      "3": {
-        "title": "30-day health guarantee",
-        "description": "30-day health guarantee for all pets"
-      }
-    },
-    "formatting": {
-      "important": "<highlight>Important Notice:</highlight> All pets must be vaccinated",
-      "emphasis": "We <highlight>strongly recommend</highlight> regular vet checkups",
-      "mixed": "Your pet's health is our <highlight>number <emphasis>one</emphasis> priority</highlight>",
-      "list": "<list><item>{points}</item></list>"
-    }
+  "browserLanguage": {
+    "showInfo": "Show Language Info",
+    "dialogTitle": "Language Information",
+    "full": "Your browser language is: ",
+    "primary": "Primary language code: ",
+    "country": "Your country: ",
+    "countryLanguage": "Common language in your country: ",
+    "unknownLanguage": "Unknown",
+    "loading": "Detecting location...",
+    "error": "Could not detect location",
+    "supported": "Supported",
+    "notSupported": "Not supported"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Spanish",
+    "de": "German",
+    "he": "Hebrew"
+  },
+  "common": {
+    "close": "Close"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About"
   }
-} 
+}

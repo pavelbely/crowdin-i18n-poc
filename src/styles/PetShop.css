@@ -1,7 +1,10 @@
+body {
+  padding: 0 24px 24px;
+}
+
 .pet-shop {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .shop-stats {
@@ -198,3 +201,23 @@ h2 {
   font-style: italic;
   padding: 20px;
 } 
+
+.menu {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.not-found {
+  text-align: center;
+  padding: 20px;
+}
+
+.info-button {
+  padding: 0!important ;
+  margin: 0!important;
+  min-width: 0!important;
+  background-color: transparent!important;
+}
