@@ -8,7 +8,7 @@
     "countryLanguage": "Übliche Sprache in Ihrem Land: ",
     "unknownLanguage": "Unbekannt",
     "loading": "Standort wird ermittelt...",
-      "error": "Standort konnte nicht ermittelt werden",
+    "error": "Standort konnte nicht ermittelt werden",
     "supported": "Unterstützt",
     "notSupported": "Nicht unterstützt"
   },
@@ -25,4 +25,4 @@
     "home": "Startseite",
     "about": "Über uns"
   }
-} 
+}
