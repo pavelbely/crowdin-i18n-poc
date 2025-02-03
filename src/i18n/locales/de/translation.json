@@ -1,28 +1,28 @@
 {
-    "browserLanguage": {
-      "showInfo": "Sprachinfo anzeigen",
-      "dialogTitle": "Sprachinformationen",
-      "full": "Ihre Browsersprache ist: ",
-      "primary": "Primärer Sprachcode: ",
-      "country": "Ihr Land: ",
-      "countryLanguage": "Übliche Sprache in Ihrem Land: ",
-      "unknownLanguage": "Unbekannt",
-      "loading": "Standort wird ermittelt...",
-        "error": "Standort konnte nicht ermittelt werden",
-      "supported": "Unterstützt",
-      "notSupported": "Nicht unterstützt"
-    },
-    "languages": {
-      "en": "Englisch",
-      "es": "Spanisch",
-      "de": "Deutsch",
-      "he": "Hebräisch"
-    },
-    "common": {
-      "close": "Schließen"
-    },
-    "navigation": {
-      "home": "Startseite",
-      "about": "Über uns"
-    }
+  "browserLanguage": {
+    "showInfo": "Sprachinfo anzeigen",
+    "dialogTitle": "Sprachinformationen",
+    "full": "Ihre Browsersprache ist: ",
+    "primary": "Primärer Sprachcode: ",
+    "country": "Ihr Land: ",
+    "countryLanguage": "Übliche Sprache in Ihrem Land: ",
+    "unknownLanguage": "Unbekannt",
+    "loading": "Standort wird ermittelt...",
+      "error": "Standort konnte nicht ermittelt werden",
+    "supported": "Unterstützt",
+    "notSupported": "Nicht unterstützt"
+  },
+  "languages": {
+    "en": "Englisch",
+    "es": "Spanisch",
+    "de": "Deutsch",
+    "he": "Hebräisch"
+  },
+  "common": {
+    "close": "Schließen"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über uns"
+  }
 } 
