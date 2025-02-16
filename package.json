@@ -5,6 +5,7 @@
   "type": "module",
   "homepage": "https://pavelbely.github.io/crowdin-i18n-poc/",
   "dependencies": {
+    "@crowdin/ota-client": "^2.0.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@formatjs/intl-pluralrules": "^5.4.2",
@@ -31,8 +32,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "crowdin:sync": "crowdin upload sources && crowdin download",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
