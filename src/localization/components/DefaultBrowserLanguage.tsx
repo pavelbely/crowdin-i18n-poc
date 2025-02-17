@@ -28,9 +28,12 @@ export const DefaultBrowserLanguage: React.FC = () => {
   useEffect(() => {
     const fetchLocation = async () => {
       try {
-        const response = await fetch('https://ipapi.co/json/');
-        const data = await response.json();
-        setLocation(data);
+        // const response = await fetch('https://ipapi.co/json/');
+        // const data = await response.json();
+        setLocation({
+          country_name: 'United States',
+          country_code: 'US'
+        });
       } catch (error) {
         console.error('Error fetching location:', error);
       } finally {

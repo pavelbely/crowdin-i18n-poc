@@ -5,11 +5,11 @@ import PetList from './PetList';
 import CustomerView from './CustomerView';
 import { Typography } from '@mui/material';
 import { initialPets, mainPoints, initialCustomers } from './constants';
-import { useModuleTranslation } from '../../../localization/useModuleTranslation';
+import { useTranslation } from 'react-i18next';
 
 
 const PetShop: React.FC = () => {
-  const { mt } = useModuleTranslation();
+  const { t } = useTranslation();
   const [gameState, setGameState] = useState<GameState>({
     pets: initialPets as Pet[],
     customers: initialCustomers as Customer[],
@@ -57,17 +57,17 @@ const PetShop: React.FC = () => {
 
   return (
     <div className="pet-shop">
-      <h1>{mt('shop.title')}</h1>
+      <h1>{t('shop.title')}</h1>
       
       <div className="shop-stats">
-        <p>{mt('shop.stats.money', { 
+        <p>{t('shop.stats.money', { 
           amount: gameState.money,
           formatParams: {
             amount: { minimumFractionDigits: 2 }
           }
         })}</p>
-        <p>{mt('shop.stats.day', { day: gameState.day })}</p>
-        <p>{mt('shop.stats.date', { 
+        <p>{t('shop.stats.day', { day: gameState.day })}</p>
+        <p>{t('shop.stats.date', { 
           date: gameState.currentDate,
           formatParams: {
             date: { 
@@ -82,10 +82,10 @@ const PetShop: React.FC = () => {
 
       <div className="shop-controls">
         <button onClick={addNewPet} className="control-button">
-          {mt('shop.controls.addPet')}
+          {t('shop.controls.addPet')}
         </button>
         <button onClick={advanceDay} className="control-button">
-          {mt('shop.controls.nextDay')}
+          {t('shop.controls.nextDay')}
         </button>
       </div>
 
@@ -93,7 +93,6 @@ const PetShop: React.FC = () => {
         <div className="important-notice">
           <Trans
             i18nKey="shop.formatting.important"
-            ns="petshop"
             components={{
               highlight: <Typography component="span" fontWeight="bold" />
             }}
@@ -102,7 +101,6 @@ const PetShop: React.FC = () => {
         <div className="recommendations">
           <Trans
             i18nKey="shop.formatting.emphasis"
-            ns="petshop"
             components={{
               highlight: <Typography component="span" fontStyle="italic" />
             }}
@@ -115,7 +113,6 @@ const PetShop: React.FC = () => {
               highlight: <Typography component="span" fontWeight="bold" />,
               emphasis: <Typography component="span" fontStyle="italic" />
             }}
-            ns="petshop"
           />
         </div>
         <div className="benefits">
@@ -123,10 +120,10 @@ const PetShop: React.FC = () => {
             {mainPoints.map(point => (
               <li key={point.id}>
                 <Typography>
-                  {mt(`shop.mainPoints.${point.id}.title`)}
+                  {t(`shop.mainPoints.${point.id}.title`)}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  {mt(`shop.mainPoints.${point.id}.description`)}
+                  {t(`shop.mainPoints.${point.id}.description`)}
                 </Typography>
               </li>
             ))}
