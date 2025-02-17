@@ -47,15 +47,6 @@ loadPolyfills().then(() => {
       },
       preload: ['en'],
     });
-
-  // Add loading event listeners
-  i18n.on('loaded', (loaded) => {
-    console.log('i18next translations loaded:', loaded);
-  });
-
-  i18n.on('failedLoading', (lng, ns, msg) => {
-    console.error('i18next failed loading:', lng, ns, msg);
-  });
 });
 
 export default i18n;

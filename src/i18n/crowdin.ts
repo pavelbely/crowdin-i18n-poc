@@ -9,7 +9,6 @@ export class CrowdinOtaI18next implements BackendModule {
   constructor(hash: string) {
     this.type = 'backend';
     this.otaClient = new otaClient(hash);
-    this.otaClient.setCurrentLocale('en');
   }
 
   init(_services: Services, _backendOptions: InitOptions, _i18nextOptions: InitOptions): void {
@@ -26,7 +25,7 @@ export class CrowdinOtaI18next implements BackendModule {
                 };
                 callback(null, mergedData);
                 })
-            .catch((e) => callback(e, null));
+            .catch(() => callback(null, LOCAL_TRANSLATIONS_FLATTENED));
             
         
     }

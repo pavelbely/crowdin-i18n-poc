@@ -18,15 +18,9 @@ function flattenObject(obj: any, prefix = ''): Record<string, string> {
 	}, {});
   }
 
-  // Load all translation
+  // Load all translation flattened
 export const LOCAL_TRANSLATIONS_FLATTENED = {
     ...flattenObject(mainTranslations),
     ...flattenObject(accountTranslations),
     ...flattenObject(petshopTranslations)
-};
-
-export const LOCAL_TRANSLATIONS = {
-    ...mainTranslations,
-    ...accountTranslations,
-    ...petshopTranslations
 };
