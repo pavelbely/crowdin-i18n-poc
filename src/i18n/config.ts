@@ -45,7 +45,6 @@ loadPolyfills().then(() => {
       backend: {
         wait: true,
       },
-      preload: ['en'],
     });
 });
 
