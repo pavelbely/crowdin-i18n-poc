@@ -2,7 +2,7 @@ name: Upload copy source to Crowdin
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ main ]
 
 jobs:
   crowdin:
