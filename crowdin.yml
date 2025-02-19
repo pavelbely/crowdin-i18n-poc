@@ -1,5 +1,6 @@
 project_id_env: "CROWDIN_PROJECT_ID"
 api_token_env: "CROWDIN_PERSONAL_TOKEN"
+base_url: "https://riverside.crowdin.com"
 
 files:
   - source: /src/i18n/locales/en/**/*
