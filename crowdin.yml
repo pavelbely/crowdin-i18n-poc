@@ -1,5 +1,6 @@
-project_id: 3
-api_token: 7d694525301a7b7a443d3d434500d2207637d7a0fd695d7b70be8e16c24c8461f88fcab152c85970
+project_id_env: "CROWDIN_PROJECT_ID"
+api_token_env: "CROWDIN_PERSONAL_TOKEN"
+
 files:
   - source: /src/i18n/locales/en/**/*
     translation: /src/i18n/locales/%two_letters_code%/**/%original_file_name%
