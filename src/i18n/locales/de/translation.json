@@ -1,6 +1,6 @@
 {
   "browserLanguage": {
-    "showInfo": "Sprach Information anzeigen",
+    "showInfo": "Sprach Information anzeigen Pavel 16 Feb",
     "dialogTitle": "Sprachinformationen",
     "full": "Ihre Browsersprache ist: ",
     "primary": "Primärer Sprachcode: ",
@@ -22,7 +22,7 @@
     "close": "Schließen"
   },
   "navigation": {
-    "home": "Startseite",
+    "home": "Startseite - Pavel Test",
     "about": "Über uns - Pavel test"
   }
 }
